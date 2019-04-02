@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ss4_task6_soNguyenTo</title>
+</head>
+<body>
+<script>
+    let maxCount = Number(prompt('Nhap so luong so nguyen to'));
+    let count = 1;
+    let number = 2;
+    let check = true;
+    while (count <= maxCount){
+        for (let i = 2; i <= number - 1; i++) {
+            if (number % i == 0) {
+                check = false;
+                break;
+            }
+        }
+        if (check == true) {
+            document.write(number + '<br>');
+            count++;
+        }
+        check = true;
+        number++;
+    }
+
+</script>
+</body>
+</html>
